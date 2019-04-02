@@ -1,4 +1,7 @@
-# coin_and_purse_ledger_db
+# Coin & Purse Ledger DB ![MoneyBag](./img/moneybag.png)
+
+## Overview
+
 The database for the ledger service.
 
 ## Docker image build command
@@ -24,3 +27,9 @@ based on the actual deployment.
 ```Bash
 docker run -it --rm --network=appnet postgres:11.1-alpine psql -h ledgerdb -U superledger
 ```
+
+## Versions
+
+| Version | Comment|
+| ---:|:---|
+| 0.1.0 | Initial database and user configuration for the ledger service. |
