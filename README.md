@@ -5,7 +5,7 @@ The database for the ledger service.
 
 ### Local build
 ```Bash
-docker build -t coin_and_purse_ledger_db:0.0.1 .
+docker build -t coin_and_purse_ledger_db:0.1.0 .
 ```
 
 ## Image run command
@@ -15,7 +15,7 @@ This should primarily be deployed with the docker-compose file in the
 Following is an example of a direct run command.
 * Note: This requires a previously deployed network _appnet_.
 ```Bash
-docker run --name ledgerdb --network appnet -e POSTGRES_PASSWORD=test -e POSTGRES_USER=superledger -d coin_and_purse_ledger_db:0.0.1
+docker run --name ledgerdb --network appnet -e POSTGRES_PASSWORD=test -e POSTGRES_USER=superledger -d coin_and_purse_ledger_db:0.1.0
 ```
 
 ## Container Connection Command
